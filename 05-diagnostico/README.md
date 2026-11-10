@@ -1,6 +1,8 @@
-# 04 · Herramientas de diagnóstico de hardware
+# 05 · Herramientas de diagnóstico de hardware
 
 **Mi rol:** desarrollo completo de las utilidades · **Stack:** C, AVR, USART
+
+> Estas utilidades salieron del trabajo de reconstrucción descrito en [03 · Remanufactura](../03-remanufactura/): sin herramientas del fabricante, hubo que construirlas.
 
 ## El problema
 

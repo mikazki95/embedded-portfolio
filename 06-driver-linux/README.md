@@ -1,4 +1,4 @@
-# 05 · Driver de plataforma Linux
+# 06 · Driver de plataforma Linux
 
 **Mi rol:** implementación completa · **Stack:** C, kernel Linux (platform driver, device tree, sysfs)
 
