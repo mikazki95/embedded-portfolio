@@ -1,7 +1,7 @@
 # Tonatiuh Velázquez Rojas
 ### Ingeniería de firmware para sistemas críticos
 
-Ingeniero en mecatrónica (Puebla, México). 3–4 años escribiendo firmware que no puede fallar: dispositivos médicos de soporte vital, monitores de signos vitales y equipos de control industrial.
+Ingeniero en mecatrónica (Puebla, México). Seis años escribiendo firmware que no puede fallar: dispositivos médicos de soporte vital, monitores de signos vitales y equipos de control industrial.
 
 Mi trabajo ha estado sobre todo en el límite del hardware: bring-up de tarjetas, control de periféricos a nivel de registro, tiempo real estricto, y depuración a nivel de bus cuando no había depurador disponible.
 
@@ -13,7 +13,7 @@ Mi trabajo ha estado sobre todo en el límite del hardware: bring-up de tarjetas
 |---|---|---|---|
 | [01](01-ventilador/) | Ventilador neumático de soporte vital | Control del ciclo respiratorio con lazos de seguridad, en ensamblador | Propietario · disponible en entrevista |
 | [02](02-monitor-vitales/) | Monitor de signos vitales | Detección de 14 arritmias con DBSCAN adaptado a la señal ECG | Extracto comentado |
-| [03](03-remanufactura/) | Remanufactura de equipos ferroviarios | Reconstrucción de esquemático sin documentación y diagnóstico propio | Caso de estudio · 3 equipos operando (lote de 9) |
+| [03](03-remanufactura/) | Remanufactura de equipos ferroviarios | Reconstrucción de esquemático sin documentación y diagnóstico propio | Caso de estudio · 3 de 3 entregados operando |
 | [04](04-fpga-metro/) | Banco de pruebas VHDL para bus de 16 bits | Verificación de un buffer de bus con `ALE`/`CS`/`RD`/`WR` | [`test_sistema_metro.vhd`](04-fpga-metro/test_sistema_metro.vhd) |
 | [05](05-diagnostico/) | Herramientas de diagnóstico de hardware | Lectura/escritura de NOR flash de 256 Mbit desde AVR por USART | [`flash_rw_avr.c`](05-diagnostico/flash_rw_avr.c) |
 | [06](06-driver-linux/) | Driver de plataforma Linux | `probe`/`remove`, device tree, `sysfs`, char device y `poll` | [`nxp_simtemp.c`](06-driver-linux/nxp_simtemp.c) |

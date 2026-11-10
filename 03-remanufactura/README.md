@@ -1,10 +1,10 @@
-# 03 · Remanufactura de equipos ferroviarios sin documentación
+# 03 · Remanufactura de monitores de tren ligero sin documentación
 
 **Mi rol:** diagnóstico, reconstrucción de esquemático e ingeniería inversa · **Duración:** 8 meses · **Estado:** 3 equipos operando, en validación
 
 ## El problema
 
-Equipos de una línea ferroviaria fuera de servicio. Sin documentación técnica: ni esquemático, ni manual de servicio, ni soporte del fabricante. Tres unidades para recuperar, y sin plano no hay forma de saber qué está mal ni dónde buscarlo.
+Monitores de un tren ligero, fuera de servicio. Sin documentación de ningún tipo: ni esquemático, ni manual de servicio, ni soporte del fabricante. De un lote de 9 unidades, el cliente entregó 3 como primera prueba; las otras 6 quedaron almacenadas y solo se liberan conforme se valida el trabajo.
 
 ## El método
 
@@ -15,16 +15,18 @@ Equipos de una línea ferroviaria fuera de servicio. Sin documentación técnica
 
 ## Resultado
 
-- **3 equipos operando en laboratorio**, de una primera entrega de 3 unidades sobre un lote de 9. El cliente libera el resto conforme se valida el trabajo.
+- **3 de 3 unidades entregadas operando: el 100% de la primera entrega.** El lote completo es de 9 y el cliente libera el resto conforme valida el trabajo.
 - **Esquemático reconstruido** de la tarjeta, que no existía.
 - Herramientas de diagnóstico reutilizables para las siguientes unidades: no un arreglo puntual, sino un proceso repetible.
 - **Validación en curso:** una unidad probada sobre el tren detenido, y una semana de operación en servicio programada como prueba final.
 
-Las utilidades de lectura y escritura de memoria que salieron de este trabajo están en [05 · Diagnóstico](../05-diagnostico/).
+## El detalle que costó más
+
+Para cerrar el diagnóstico hacía falta el firmware del microcontrolador H8, pero no se autorizó extraerlo de una unidad en operación. La única vía legítima fue leerlo de las tarjetas dadas de baja: de **6 equipos inservibles se recuperaron los 2 firmwares** que hacían falta.
 
 ## En curso
 
-Ingeniería inversa del firmware del microcontrolador H8 del equipo, para evaluar la lógica y no solo el hardware. Entender qué espera el software del resto de la tarjeta permite diagnosticar fallas que eléctricamente se ven correctas: el bus responde, los voltajes están bien, y aun así el equipo no opera.
+Análisis del firmware del H8 recuperado, para evaluar la lógica y no solo el hardware. Entender qué espera el software del resto de la tarjeta permite diagnosticar fallas que eléctricamente se ven correctas: el bus responde, los voltajes están bien, y aun así el equipo no opera.
 
 ## Por qué esto importa más de lo que parece
 

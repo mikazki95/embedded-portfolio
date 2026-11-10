@@ -1,6 +1,6 @@
 # 04 · Banco de pruebas VHDL para un bus de 16 bits
 
-**Mi rol:** verificación del buffer de bus en FPGA · **Stack:** VHDL, Xilinx ISE · **Contexto:** proyecto de sistema de metro (trabajo internacional)
+**Mi rol:** verificación del buffer de bus en FPGA · **Stack:** VHDL, Xilinx ISE · **Contexto:** tarjetas de metro, trabajo internacional
 
 ## El problema
 
