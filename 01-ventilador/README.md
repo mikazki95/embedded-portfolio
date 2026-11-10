@@ -1,6 +1,6 @@
 # 01 · Ventilador neumático de soporte vital
 
-**Mi rol:** firmware de control del ciclo respiratorio · **Duración:** ~1.5 años · **Stack:** ensamblador
+**Mi rol:** firmware de control del ciclo (en equipo) y diseño de la parte neumática · **Duración:** ~1.5 años · **Stack:** ensamblador
 
 ## El problema
 
@@ -17,6 +17,7 @@ Un ventilador neumático de soporte vital tiene que entregar el ciclo respirator
 
 - Máquina de estados del ciclo respiratorio, temporizada por interrupciones.
 - Control de válvulas y lectura de sensores dentro del lazo de tiempo real.
+- Diseño de la parte neumática del equipo: trayectorias de aire, válvulas y sensores. El firmware y el circuito neumático se diseñaron juntos, no uno después del otro.
 - Rutinas de seguridad y alarmas: detección de condiciones fuera de rango y paso a estado seguro.
 - Integración con el resto del ecosistema del equipo.
 

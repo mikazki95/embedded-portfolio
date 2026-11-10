@@ -1,6 +1,6 @@
 # 03 · Remanufactura de equipos ferroviarios sin documentación
 
-**Mi rol:** diagnóstico, reconstrucción de esquemático e ingeniería inversa · **Resultado:** 3 equipos devueltos a servicio
+**Mi rol:** diagnóstico, reconstrucción de esquemático e ingeniería inversa · **Duración:** 8 meses · **Estado:** 3 equipos operando, en validación
 
 ## El problema
 
@@ -15,9 +15,10 @@ Equipos de una línea ferroviaria fuera de servicio. Sin documentación técnica
 
 ## Resultado
 
-- **3 equipos reparados y devueltos a servicio.**
+- **3 equipos operando en laboratorio**, de una primera entrega de 3 unidades sobre un lote de 9. El cliente libera el resto conforme se valida el trabajo.
 - **Esquemático reconstruido** de la tarjeta, que no existía.
-- Herramientas de diagnóstico reutilizables para las siguientes unidades, no un arreglo puntual.
+- Herramientas de diagnóstico reutilizables para las siguientes unidades: no un arreglo puntual, sino un proceso repetible.
+- **Validación en curso:** una unidad probada sobre el tren detenido, y una semana de operación en servicio programada como prueba final.
 
 Las utilidades de lectura y escritura de memoria que salieron de este trabajo están en [05 · Diagnóstico](../05-diagnostico/).
 
