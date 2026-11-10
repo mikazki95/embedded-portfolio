@@ -23,9 +23,22 @@ Las utilidades hacen eso desde una PC, enviando comandos por puerto serie a un m
 
 El detalle que importa es el manejo de la flash: la secuencia de comandos, el sondeo de estado y el tamaño de ráfaga son los que determinan si el grabado es correcto o silenciosamente corrupto.
 
-## Nota
+## Cómo se arma
 
-Los encabezados de bajo nivel (`USART0.h`, y el que define las secuencias del chip de flash) no se incluyen: describen el hardware concreto sobre el que se trabajó. El archivo se publica como referencia de la lógica de acceso, no como proyecto compilable tal cual.
+El proyecto es autocontenido: los dos encabezados que el fuente incluye están aquí.
+
+- `USART0.h` — UART del AVR (conserva la cabecera de su autor original).
+- `S29GL256P.h` — mapeo de pines del bus de memoria y constantes del chip.
+
+Requisitos: `avr-gcc` con `avr-libc`, para **ATmega2560** a 14.7456 MHz.
+
+```sh
+avr-gcc -mmcu=atmega2560 -DF_CPU=14745600UL -Os -o flash_rw.elf flash_rw_avr.c
+```
+
+Esa frecuencia no es arbitraria: es la que fija el archivo en `F_CPU`, y a la que `UBRR0 = 7` entrega exactamente 115200 baudios, que es lo que espera el protocolo del lado de la PC.
+
+> No compilé este proyecto en el entorno donde armé el repositorio (no había `avr-gcc` disponible), así que el build está pendiente de verificación.
 
 ## Qué mejoraría hoy
 
